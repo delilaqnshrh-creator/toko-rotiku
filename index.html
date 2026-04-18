@@ -386,6 +386,87 @@
             line-height: 1.6;
         }
 
+        /* ---- PROMO ---- */
+        .promo-section {
+            background: var(--cream);
+            position: relative;
+        }
+
+        .promo-card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            border: 2px dashed var(--gold-soft);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .promo-card::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle, rgba(232, 201, 155, 0.2), transparent 70%);
+            border-radius: 50%;
+        }
+
+        .promo-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-card);
+            border-color: var(--gold);
+        }
+
+        .promo-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--cream), var(--gold-soft));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--brown-dark);
+            font-size: 1.8rem;
+        }
+
+        .promo-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--brown-dark);
+            margin-bottom: 8px;
+        }
+
+        .promo-desc {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .promo-highlight {
+            font-weight: 700;
+            color: var(--brown-medium);
+        }
+
+        .promo-tag {
+            display: inline-block;
+            background: var(--brown-dark);
+            color: var(--gold-soft);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+    
+
         /* ---- TENTANG KAMI ---- */
         .about-section {
             background: var(--cream);
@@ -1050,6 +1131,54 @@
                             <div class="menu-card-price">Rp8.000</div>
                             <p class="menu-card-desc">Donat isi krim vanila lembut</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== PROMO ======== -->
+    <section class="promo-section section-padding" id="promo">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-label">Promo Spesial</div>
+                <h2 class="section-title">Penawaran Menarik untuk Kamu</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Jangan lewatkan promo terbatas dari Tokorotiku! Dapatkan harga terbaik setiap harinya.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Promo 1: Diskon Jumat -->
+                <div class="col-lg-5 col-md-6 fade-up">
+                    <div class="promo-card">
+                        <div class="promo-icon">
+                            <i class="fas fa-percent"></i>
+                        </div>
+                        <div class="promo-tag">Khusus Hari Jumat</div>
+                        <h3 class="promo-title mt-3">Diskon 10%</h3>
+                        <p class="promo-desc">
+                            Dapatkan potongan harga <span class="promo-highlight">10%</span> untuk semua menu roti dan kue spesial kami setiap hari Jumat! Berlaku untuk pembelian di toko maupun pemesanan online.
+                        </p>
+                        <a href="https://wa.me/6285136488738?text=Halo%20Tokorotiku%2C%20saya%20ingin%20menggunakan%20promo%20Jumat%2010%25" target="_blank" class="hero-btn" style="padding: 10px 24px; font-size: 0.9rem;">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Promo 2: Beli 1 Gratis 1 -->
+                <div class="col-lg-5 col-md-6 fade-up">
+                    <div class="promo-card">
+                        <div class="promo-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="promo-tag">Promo Belanja</div>
+                        <h3 class="promo-title mt-3">Beli 1 Gratis 1</h3>
+                        <p class="promo-desc">
+                            Beli 1 gratis 1 untuk semua varian roti dengan <span class="promo-highlight">minimal pembelian Rp100.000</span>. Ajak keluarga dan teman untuk menikmati roti bersama!
+                        </p>
+                        <a href="https://wa.me/6285136488738?text=Halo%20Tokorotiku%2C%20saya%20ingin%20menggunakan%20promo%20Beli%201%20Gratis%201" target="_blank" class="hero-btn" style="padding: 10px 24px; font-size: 0.9rem;">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </a>
                     </div>
                 </div>
             </div>
